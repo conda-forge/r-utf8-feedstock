@@ -206,6 +206,3 @@ Feedstock Maintainers
 * [@johanneskoester](https://github.com/johanneskoester/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
-
-<!-- dummy commit to enable rerendering -->
-
