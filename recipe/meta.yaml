@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: utf8_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/utf8_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/utf8/utf8_{{ version }}.tar.gz
@@ -22,7 +21,7 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}        # [not win]
+    - {{ compiler('c') }}              # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
@@ -51,8 +50,3 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - ocefpaf
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
